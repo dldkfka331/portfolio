@@ -1,6 +1,11 @@
 /* 스크롤 */
 .ScrollTop {position: fixed; top: 20px; left: 20px; width: 50px; height: 30px; background: #fff; color: #000; text-align: center; line-height: 30px; z-index: 9999; }
 
+
+
+
+@font-face { font-family: '양진체'; src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
 body{
     --font-main1: 'Neucha', cursive;
     --font-main2: 'Candal', sans-serif;
@@ -9,21 +14,33 @@ body{
     --font-main5: 'Belleza', sans-serif;
     --font-main6: 'Limelight', cursive;
     --font-main7: 'Barriecito', cursive;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-kr: '양진체';
+
 }
 
 
 
 /*전체*/
 #contents {}
-#section1 {background: #000; height: 100vh; width: 100%; }
-#section2 {}
+#section1 {background: #000; height: 100vh; }
+#section2 {height: 500vh; background: #000;}
 #section3 {}
 #section4 {}
 #section5 {}
 #section6 {}
 
+/*container*/
+.container {width: 100%;}
+
 
 /*main*/
+.main {position: relative;}
+.main .main_top {position: absolute; top: 2%; left: 50%; width: 40%; transform: translateX(-50%); display: flex; justify-content: space-around;}
+.main .main_top strong {position: relative; font-family: var(--font-roboto);}
+.main .main_top strong:after {content: 'X'; position: absolute; top: 20%; right: -100%; color: rgba(255, 255, 255, 0.6); font-size: .8vw; font-weight: bold;}
+.main .main_top strong:last-child:after {display: none;}
+.main .main_top a {color: #fff; font-size: 1vw; }
 .main .main_tit {height: 100vh; display: flex; justify-content: center; align-items: center; }
 .main .main_tit h1 {font-family: var(--font-main7); text-transform: uppercase; text-align: center; color: #fff; font-size: 10vw; font-weight: bold; white-space: nowrap; line-height: 1.2; margin-bottom: 5%;}
 .main .main_box {position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow-x: hidden;}
@@ -83,3 +100,16 @@ body{
 .main .main_box .mb_text:nth-child(52) {top: 33%; left: 8%; transform: rotate(29deg);}
 .main .main_box .mb_text:nth-child(53) {top: 69%; left: 28%; transform: rotate(-24deg);}
 .main .main_box .mb_text:nth-child(54) {top: 65%; left: 12%; transform: rotate(9deg);}
+
+.main .main_row {position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%) scale(1.9); width: 31px; height: 50px; }
+.main .main_row svg {width: 100%;}
+
+
+/* who */
+.who {padding-top: 50vh;}
+.who .who_tit {text-align: center;}
+.who .who_tit p {width: 80%; margin: 0 auto; font-family: var(--font-main7); color: #fff; font-size: 7vw; line-height: 1;}
+.who .who_tit p span {display: block; margin-top: 20vh; font-size: 2vw; font-family: var(--font-roboto); }
+.who_bg { margin-top: 20vw; width: 100%; height: 70vw; background: url(../img/port002.png) no-repeat; background-size: contain;}
+.who_text {background: #fff; width: 100%; height: 100vh; margin-top: 10vh; position: relative;}
+.who_text .who_svg {position: absolute; width: 200px; height: 200px; top: -100px; left: 50%; transform: translateX(-50%); }
