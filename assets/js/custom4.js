@@ -87,7 +87,9 @@ $(function(){
         contact02 = "<span class='color'>" + contact02 +"</span>";
     let contact03 = $(".contact_txt").find("strong").eq(2).text().split("").join("</span><span class='color'>");
         contact03 = "<span class='color'>" + contact03 +"</span>";
-    $(".contact_txt").html(contact01 +"<br>" +contact02 +"<br>" + contact03 );
+    let contact04 = $(".contact_txt").find("strong").eq(3).text().split("").join("</span><span class='color'>");
+        contact04 = "<span class='color'>" + contact04 +"</span>";
+    $(".contact_txt").html(contact01 +"<br>" +contact02 +"<br>" + contact03 +"<br>" + contact04 );
 
     $(".contact_txt").find("span").mouseover(function(){
         $(this).removeClass("color");

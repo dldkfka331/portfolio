@@ -290,7 +290,7 @@ body {
 /*contact*/
 .contact {color: #fff;}
 .contact h3 {font-size: 8vw; font-weight: 600; font-style: italic; padding: 30% 0 0 10%; margin-bottom: 10vh;}
-.contact .contact_txt {margin-left: 20%; font-weight: 400; margin-bottom: 5px; font-size: 1vw; font-family: var(--font-kr); width: 40%; }
+.contact .contact_txt {margin-left: 20%; font-weight: 400; margin-bottom: 5px; font-size: 1vw; font-family: var(--font-kr); width: 60%; }
 .contact .contact_txt span {font-size: 2vw; font-weight: bold; color: #a8f8b5; }
 .contact .contact_txt span:nth-child(2n)  {color: #548687;}
 .contact .contact_txt span:nth-child(3n)  {color: #6760a0;}
@@ -298,5 +298,4 @@ body {
 .contact .contact_txt span:nth-child(7n)  {color: #ffc952;}
 .contact .contact_txt span:nth-child(4n)  {color: #ff7473;}
 .contact .contact_txt span.color {color: rgba(255,255,255,.9); transition: color 4s;}
-
 .question {font-style: italic;}
